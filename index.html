@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Generator | 5.9-homework</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container headercontainer">
+        <div class="site-logo">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25 2.5C12.324 2.5 2.5 12.324 2.5 25C2.5 37.676 12.324 47.5 25 47.5C37.676 47.5 47.5 37.676 47.5 25C47.5 12.324 37.676 2.5 25 2.5ZM25 42.5C15.829 42.5 8.5 35.171 8.5 25C8.5 14.829 15.829 7.5 25 7.5C34.171 7.5 41.5 14.829 41.5 25C41.5 35.171 34.171 42.5 25 42.5Z"
+              fill="#CDA274"
+            />
+          </svg>
+          <span>Want to make friends  ?</span>
+        </div>
+        <div class="theme-toggle">
+          <button id="dark-btn"><i class="fa-solid fa-moon"></i></button>
+          <button id="light-btn" class="hidden">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <h1>Random User Generator</h1>
+      </section>
+      <section class="middle">
+        <div class="form">
+          <input type="text" id="forminput" placeholder="Live search users" autocomplete="off" />
+          <button id="formbutton" class="refresh-button">
+            <i class="fa-solid fa-arrows-rotate"></i> Refresh
+          </button>
+          <button id="clearbutton" class="clearbutton">
+            <i class="fa-solid fa-broom"></i> Clear
+          </button>
+        </div>
+        <ul id="user"></ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="https://github.com/abdulvokhidjon?tab=repositories"
+        ><p>Powered by <span>Abdulvohid</span></p></a
+      >
+    </footer>
+    <div id="overlay" class="hidden"><i class="fas fa-spinner"></i></div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
